@@ -307,12 +307,23 @@
         justify-content: space-between;
         border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
         padding: 20px 32px;
+        padding: 0;
+    }
+    .planet-list{
+        padding-right: 32px;
+    }
+    .planet-names{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .planet-names:hover{
+        border-top: 4px solid;
     }
     .content{
         margin-bottom: 47px;
     }
     .head{
-        padding-bottom: 0;
+        padding: 24px 32px;
     }
     .middle{
         gap: 0;

@@ -166,6 +166,14 @@ function App() {
     
   }
 
+  const handleMouseOver = (e, color) => {
+    e.target.style.border = '4px solid ' + color;
+  };
+
+  const handleMouseOut = (e) => {
+    e.target.style.border = 'none'; 
+  };
+
   
  
 
@@ -187,7 +195,7 @@ function App() {
             <div className="planet" onClick={() => {planetClicked(0)}}>
               <div className='planet-child'>
                 <div className='circle mercury'></div>
-                <div className="planet-names" onClick={() => {planetClicked(0)}}>Mercury</div>
+                <div className="planet-names" style={{borderColor: '#419EBB'}}   onClick={() => {planetClicked(0)}}>Mercury</div>
               </div>
               <div className='arrow'><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg></div>
             </div>
@@ -197,7 +205,7 @@ function App() {
             <div className="planet" onClick={() => {planetClicked(1)}}>
               <div className='planet-child'>
                 <div className='circle venus'></div>
-                <div className="planet-names" onClick={() => {planetClicked(1)}}>venus</div>
+                <div className="planet-names" style={{borderColor: '#EDA249'}} onClick={() => {planetClicked(1)}}>venus</div>
               </div>
               <div className='arrow'><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg></div>
             </div>
@@ -207,7 +215,7 @@ function App() {
             <div className="planet" onClick={() => {planetClicked(2)}}>
               <div className='planet-child'>
                 <div className='circle earth'></div>
-                <div className="planet-names" onClick={() => {planetClicked(2)}}>earth</div>
+                <div className="planet-names" style={{borderColor: '#6D2ED5'}} onClick={() => {planetClicked(2)}}>earth</div>
               </div>
               <div className='arrow'><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg></div>
             </div>
@@ -217,7 +225,7 @@ function App() {
             <div className="planet" onClick={() => {planetClicked(3)}}>
               <div className='planet-child'>
                 <div className='circle mars'></div>
-                <div className="planet-names" onClick={() => {planetClicked(3)}}>mars</div>
+                <div className="planet-names" style={{borderColor: '#D14C32'}} onClick={() => {planetClicked(3)}}>mars</div>
               </div>
               <div className='arrow'><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg></div>
             </div>
@@ -227,7 +235,7 @@ function App() {
             <div className="planet" onClick={() => {planetClicked(4)}}>
               <div className='planet-child'>
                 <div className='circle jupiter'></div>
-                <div className="planet-names" onClick={() => {planetClicked(4)}}>jupiter</div>
+                <div className="planet-names" style={{borderColor: '#D83A34'}} onClick={() => {planetClicked(4)}}>jupiter</div>
               </div>
               <div className='arrow'><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg></div>
             </div>
@@ -237,7 +245,7 @@ function App() {
             <div className="planet" onClick={() => {planetClicked(5)}}>
               <div className='planet-child'>
                 <div className='circle saturn'></div>
-                <div className="planet-names" onClick={() => {planetClicked(5)}}>saturn</div>
+                <div className="planet-names" style={{borderColor: '#CD5120'}} onClick={() => {planetClicked(5)}}>saturn</div>
               </div>
               <div className='arrow'><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg></div>
             </div>
@@ -247,7 +255,7 @@ function App() {
             <div className="planet" onClick={() => {planetClicked(6)}}>
               <div className='planet-child'>
                 <div className='circle uranus'></div>
-                <div className="planet-names" onClick={() => {planetClicked(6)}}>uranus</div>
+                <div className="planet-names" style={{borderColor: '#1EC1A2'}} onClick={() => {planetClicked(6)}}>uranus</div>
               </div>
               <div className='arrow'><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg></div>
             </div>
@@ -258,7 +266,7 @@ function App() {
             <div className="planet" onClick={() => {planetClicked(7)}}>
               <div className='planet-child'>
                 <div className='circle neptune'></div>
-                <div className="planet-names" onClick={() => {planetClicked(7)}}>neptune</div>
+                <div className="planet-names" style={{borderColor: '#2D68F0'}} onClick={() => {planetClicked(7)}}>neptune</div>
               </div>
               <div className='arrow'><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg></div>
             </div>
